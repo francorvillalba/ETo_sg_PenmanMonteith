@@ -1,0 +1,4 @@
+El archivo EP2010_3001_M1_251120.txt es un registro de datos desde 08/08/2025 al 20/11/2025 de temperatura, humedad, radiación solar, velocidad y dirección del viento, pluviometría, entre otros, registrados cada 15 minutos, de una estación PEGASUS EP2010
+El archivo Evapotransipiracion.R contiene un script que importa los datos meteorològicos del archivo EP2010_3001_M1_251120.txt y realiza los procedimientos de cálculo necesarios para obtener la evapotranspiraciòn de referencia por el método Penman-Monteith
+ResultadoETo.rds es un objeto de tipo data.frame de R que contiene los datos ya procesados mediante el script Evapotranspiracion.R, además de la ETo diaria en mm/día, tiene las variables intermedias que se generan en el proceso de càlculo
+comparacion.R, produce gráficos para comparar los resultados, con datos diarios descargados de una estación proxima de la red de estaciones meteorológicas del INTA
